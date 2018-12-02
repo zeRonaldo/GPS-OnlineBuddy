@@ -31,7 +31,38 @@ code {
 }
 
 header {
-  background: #272d2d;
+  background: #030404;
+  box-shadow: 2px 2px 5px #14B770;
+  color: #14B770 !important;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.6rem 0;
+}
+header .header-button {
+  background-color: #14B770;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #edf5fc !important;
+  margin: 0 0.3rem;
+}
+header input {
+  width: 50vw;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+  background: #333b3b;
+  border: none;
+}
+header input:focus {
+  background: #627171;
+  color: #edf5fc;
+  border: none;
+  box-shadow: none;
+  outline: none;
 }
 
 footer {
@@ -181,6 +212,14 @@ footer {
   height: 50px;
   border-radius: 50%;
   border: 0.15rem solid #14B770;
+}
+
+.game-sinopse, .game-evals {
+  padding: 3rem 2rem;
+}
+
+.results .profiles, .results .games {
+  width: 750px;
 }
 
 .button {

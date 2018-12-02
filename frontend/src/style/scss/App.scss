@@ -12,6 +12,7 @@ $destaque: #14B770;
     background: $base;
 }
 .content{
+    
     flex: 1;
     max-width: 900px;
     width: 100%;
@@ -23,7 +24,38 @@ $destaque: #14B770;
     background-color: lighten($oposta, 10%)
 }
 header{
-    background: $base
+    background: darken($base, 15%);
+    box-shadow: 2px 2px 5px $destaque;
+    color: $destaque !important;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: .6rem 0;
+    .header-button{
+        background-color: $destaque;
+        padding: .3rem .8rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: $oposta!important;
+        margin: 0 .3rem;
+    }
+    input{
+        width: 50vw;
+    padding: .6rem;
+    font-size: .8rem;
+    background: lighten($base, 5%);
+    border: none;
+        &:focus{
+            background: lighten($base, 25%);
+            color:$oposta;
+            border:none;
+            box-shadow: none;
+            outline: none;
+        }
+    }
 }
 footer{
     background: $destaque;
@@ -176,6 +208,14 @@ footer{
             border-radius: 50%;
             border: 0.15rem solid $destaque;
         }
+    }
+}
+.game-sinopse, .game-evals{
+    padding: 3rem 2rem
+}
+.results{
+    .profiles, .games{
+        width:750px;
     }
 }
 .button{

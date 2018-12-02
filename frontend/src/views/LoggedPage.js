@@ -2,13 +2,13 @@ import React from 'react';
 import ListFriends from '../templates/ListFriends';
 import ListGames from '../templates/ListGames';
 import ListEvals from '../templates/ListEvals';
-
+import NoPic from '../res/no-pict.png';
 const LoggedPage = props => {
     return (
         <div className="content">
             
            <section className="profile-info">
-                <div className="picture"><img alt="profile-pic"></img></div>
+                <div className="picture"><img alt="profile-pic" src={NoPic}></img></div>
                 <div className="identity">
                     <h1>Nome do Usuário</h1>
                     <h3>nome real</h3>
