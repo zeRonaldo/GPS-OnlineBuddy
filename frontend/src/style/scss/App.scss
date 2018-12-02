@@ -1,0 +1,192 @@
+$base: #272d2d;
+$complementar: #7E7C7F;
+$complementar2: #b8c5d6;
+$oposta: #edf5fc;
+$destaque: #14B770;
+
+.full-page{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: $base;
+}
+.content{
+    flex: 1;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    background-color: lighten($oposta, 10%)
+}
+header{
+    background: $base
+}
+footer{
+    background: $destaque;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: $oposta;
+}
+
+//PROFILES
+.profile-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:.8rem 0;
+    background-color: lighten($complementar, 30%);
+    border-bottom: 1px solid $complementar2;
+    width: 100%;
+    .picture{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 0.4rem solid $destaque;
+        display: flex;
+        align-items: center;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+    .identity{
+        width: 50%;
+        h1{
+            color: $destaque;
+            font-weight: 300;
+            font-size: 2.1rem;
+            margin: 0
+        }
+        h3{
+            color: $base;
+            font-weight: 400;
+            font-size: 1.8rem;
+            margin: 0
+        }
+        
+    }
+
+}
+.profile-details{
+    padding:.8rem;
+    display: flex;
+    .half{
+        width: 50%;
+        
+        section{
+            background-color: #fff;
+            margin:1rem;
+            box-shadow: 2px 2px 5px $complementar2;
+            .section-content{
+                font-size: 0.9rem;
+                padding:1rem;
+                margin: 0;
+                color: $base;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+    
+            }
+            h4{
+                margin: 0;
+                padding: 1rem;
+                background: $destaque;
+                color: $oposta
+            }
+        }
+    }
+    
+}
+.profile-picture-resumed{
+    display: flex;
+    max-width: 100px;
+    max-height: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: .2rem;
+    a{
+        img{
+            width: 100%
+        }
+        p{
+            position: relative;
+            top: -3rem;
+            text-align: center;
+        }
+    }
+}
+.game-picture-resumed{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin: .3rem 0;
+    a{
+        
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+        img{
+            width:80px;
+        }
+        .resumed-info{
+            width: calc(100% - 90px);
+            h5{
+                color: $destaque;
+                margin:0;
+                font-size: 1rem;
+                font-weight: 300
+            }
+        }
+    }
+}
+.evaluation{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .info{
+            padding: 0.5rem 1rem;
+            h5,p {
+                margin:0;
+            }
+        }
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 0.15rem solid $destaque;
+        }
+    }
+}
+.button{
+    padding: 0.8rem;
+    background: $destaque;
+    color: $oposta;
+    font-size: .8rem;
+    font-weight: 700;
+    margin: .3rem;
+    &:hover{
+        background:  darken($destaque, 10%);
+    }
+    
+}
