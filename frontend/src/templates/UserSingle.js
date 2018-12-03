@@ -8,7 +8,7 @@ const UserSingle = (props) => {
         }
         return(
             <div className="profile-picture-resumed"> 
-              <a>
+              <a href="/user/">
                   <img src={NoPic} alt="profile-pic"></img>
                   <p>@userTag</p>
               </a>
