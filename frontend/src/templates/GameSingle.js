@@ -9,7 +9,7 @@ const  GameSingle = (props) => {
         }
         return(
             <div className="game-picture-resumed"> 
-              <a>
+              <a href="/game/">
                   
                   <img src={NoPic} alt="game-cover"></img>
                   <div className="resumed-info">
