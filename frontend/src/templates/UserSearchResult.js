@@ -9,7 +9,7 @@ const  UserSearchResult = (props) => {
         }
         return(
             <div className="game-picture-resumed"> 
-              <a>
+              <a href="/user/">
                   
                   <img src={NoPic} alt="game-cover"></img>
                   <div className="resumed-info">
